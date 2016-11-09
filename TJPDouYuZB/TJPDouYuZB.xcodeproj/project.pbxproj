@@ -13,6 +13,11 @@
 		BC0D55F01DD2FEA200BD51CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0D55EE1DD2FEA200BD51CA /* LaunchScreen.storyboard */; };
 		BC0D55FB1DD2FEA200BD51CA /* TJPDouYuZBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0D55FA1DD2FEA200BD51CA /* TJPDouYuZBTests.swift */; };
 		BC0D56061DD2FEA200BD51CA /* TJPDouYuZBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0D56051DD2FEA200BD51CA /* TJPDouYuZBUITests.swift */; };
+		BCD786A51DD3168A00407C95 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD786A31DD3168A00407C95 /* Home.storyboard */; };
+		BCD786AA1DD316E300407C95 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD786A81DD316E300407C95 /* Follow.storyboard */; };
+		BCDB819D1DD31B75009C6CB0 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDB819C1DD31B75009C6CB0 /* Live.storyboard */; };
+		BCDB819F1DD31B7F009C6CB0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDB819E1DD31B7F009C6CB0 /* Profile.storyboard */; };
+		BCDB81A61DD31BD4009C6CB0 /* TJPMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB81A31DD31BD4009C6CB0 /* TJPMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		BC0D56011DD2FEA200BD51CA /* TJPDouYuZBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TJPDouYuZBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0D56051DD2FEA200BD51CA /* TJPDouYuZBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJPDouYuZBUITests.swift; sourceTree = "<group>"; };
 		BC0D56071DD2FEA200BD51CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD786A41DD3168A00407C95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TJPDouYuZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
+		BCD786A91DD316E300407C95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TJPDouYuZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
+		BCDB819C1DD31B75009C6CB0 /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
+		BCDB819E1DD31B7F009C6CB0 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		BCDB81A31DD31BD4009C6CB0 /* TJPMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TJPMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				BC0D56131DD30CFC00BD51CA /* Classes */,
-				BC0D55E91DD2FEA200BD51CA /* Main.storyboard */,
 				BC0D55E51DD2FEA200BD51CA /* AppDelegate.swift */,
 				BC0D55EC1DD2FEA200BD51CA /* Assets.xcassets */,
 				BC0D55EE1DD2FEA200BD51CA /* LaunchScreen.storyboard */,
@@ -139,6 +148,7 @@
 		BC0D56141DD30CFC00BD51CA /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				BCD786A81DD316E300407C95 /* Follow.storyboard */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -146,6 +156,9 @@
 		BC0D56151DD30CFC00BD51CA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BCDB819A1DD31ACC009C6CB0 /* Model */,
+				BCDB819B1DD31ACC009C6CB0 /* View */,
+				BCDB81991DD31ACC009C6CB0 /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -153,6 +166,7 @@
 		BC0D56161DD30CFC00BD51CA /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				BCDB819C1DD31B75009C6CB0 /* Live.storyboard */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -160,6 +174,9 @@
 		BC0D56171DD30CFC00BD51CA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				BCDB81A41DD31BD4009C6CB0 /* Model */,
+				BCDB81A51DD31BD4009C6CB0 /* View */,
+				BCDB81A21DD31BD4009C6CB0 /* Controller */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -167,6 +184,7 @@
 		BC0D56181DD30CFC00BD51CA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				BCDB819E1DD31B7F009C6CB0 /* Profile.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -176,6 +194,51 @@
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		BCDB81991DD31ACC009C6CB0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCD786A31DD3168A00407C95 /* Home.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BCDB819A1DD31ACC009C6CB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCDB819B1DD31ACC009C6CB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCDB81A21DD31BD4009C6CB0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC0D55E91DD2FEA200BD51CA /* Main.storyboard */,
+				BCDB81A31DD31BD4009C6CB0 /* TJPMainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BCDB81A41DD31BD4009C6CB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCDB81A51DD31BD4009C6CB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +351,11 @@
 			files = (
 				BC0D55F01DD2FEA200BD51CA /* LaunchScreen.storyboard in Resources */,
 				BC0D55ED1DD2FEA200BD51CA /* Assets.xcassets in Resources */,
+				BCDB819D1DD31B75009C6CB0 /* Live.storyboard in Resources */,
 				BC0D55EB1DD2FEA200BD51CA /* Main.storyboard in Resources */,
+				BCD786A51DD3168A00407C95 /* Home.storyboard in Resources */,
+				BCDB819F1DD31B7F009C6CB0 /* Profile.storyboard in Resources */,
+				BCD786AA1DD316E300407C95 /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCDB81A61DD31BD4009C6CB0 /* TJPMainViewController.swift in Sources */,
 				BC0D55E61DD2FEA200BD51CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +423,7 @@
 				BC0D55EA1DD2FEA200BD51CA /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		BC0D55EE1DD2FEA200BD51CA /* LaunchScreen.storyboard */ = {
@@ -363,6 +432,24 @@
 				BC0D55EF1DD2FEA200BD51CA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BCD786A31DD3168A00407C95 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCD786A41DD3168A00407C95 /* Base */,
+			);
+			name = Home.storyboard;
+			path = ../../Main;
+			sourceTree = "<group>";
+		};
+		BCD786A81DD316E300407C95 /* Follow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCD786A91DD316E300407C95 /* Base */,
+			);
+			name = Follow.storyboard;
+			path = ../Main;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -560,6 +647,7 @@
 				BC0D560C1DD2FEA200BD51CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC0D560D1DD2FEA200BD51CA /* Build configuration list for PBXNativeTarget "TJPDouYuZBTests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +656,7 @@
 				BC0D560F1DD2FEA200BD51CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC0D56101DD2FEA200BD51CA /* Build configuration list for PBXNativeTarget "TJPDouYuZBUITests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +665,7 @@
 				BC0D56121DD2FEA200BD51CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
